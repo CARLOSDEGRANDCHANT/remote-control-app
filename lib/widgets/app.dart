@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ui/screens/home_screen.dart';
 
 
 class App extends StatefulWidget{
@@ -14,7 +15,9 @@ class _AppState extends State<App>{
 
   @override
   Widget build(BuildContext context) {
-    return Text('Hey!');
+    return MaterialApp(
+      home: HomeScreen(),
+    );
   }
 
 }
